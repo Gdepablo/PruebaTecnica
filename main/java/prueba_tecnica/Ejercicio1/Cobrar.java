@@ -4,12 +4,11 @@ public class Cobrar implements Runnable{
     Tarjeta tarjeta;
     double monto;
 
-
     public Cobrar(Tarjeta tarjeta, double monto) {
         this.tarjeta = tarjeta;
         this.monto = monto;
     }
-
+    Cobrar claseParaCobrar = new Cobrar(tarjeta,monto);
     @Override
     public void run() {
         tarjeta.devolverInformación();

@@ -35,7 +35,7 @@ public abstract double calcularTasa();
 public double validarTasa() {
     if (calcularTasa() < limiteDeTasa) {
         return calcularTasa();}
-        else throw new TasaSuperada("La tasa calculada no puede superar el 5%");
+        else throw new TasaSuperadaException("La tasa calculada no puede superar el 5%");
     }
 
 public void devolverInfoDeTasa() {
